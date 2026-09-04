@@ -17,10 +17,10 @@ const protoLoader = require('@grpc/proto-loader');
 const { WebSocket, createWebSocketStream } = require('ws');
 
 // ========================== 环境变量配置 ==========================
-const UUID = process.env.UUID || '5efabea4-f6d4-91fd-b8f0-17e004c89c60';
-const NEZHA_SERVER = process.env.NEZHA_SERVER || '';       // 仅支持哪吒v1，格式：nz.xxx.com:8008
-const NEZHA_KEY = process.env.NEZHA_KEY || '';             // nz_client_secret密钥
-const DOMAIN = process.env.DOMAIN || 'your-domain.com';    // 项目分配的域名,例如：xxx.xxx.com
+const UUID = process.env.UUID || '6c8a0960-9a9a-46ec-9c8e-66d5194f64c2';
+const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nzku.fortymenty.eu.org:443';       // 仅支持哪吒v1，格式：nz.xxx.com:8008
+const NEZHA_KEY = process.env.NEZHA_KEY || 'UsC5sNDciSaNggxJdB3EGSGYS242VT7q';             // nz_client_secret密钥
+const DOMAIN = process.env.DOMAIN || '';    // 项目分配的域名,例如：xxx.xxx.com
 const AUTO_ACCESS = process.env.AUTO_ACCESS || false;      // 是否开启自动访问保活，需确保DOMAIN可用
 const SUB_PATH = process.env.SUB_PATH || 'sub';            // 订阅token
 const NAME = process.env.NAME || '';                       // 节点名称
